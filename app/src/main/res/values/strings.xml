@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BYND_Library</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">os6m7r08URB1vWZ2uuWFBY5UUjeos9UxmhVFv61z</string>
+    <string name="back4app_client_key">5CrEjJbHVkj0bIm21cdX6SUqfK5KhHxaNAVb9PqG</string>
+</resources>
