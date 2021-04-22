@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
+    android:animateLayoutChanges="false"
+    android:background="#4D01579B"
+    android:backgroundTint="@android:color/holo_blue_light"
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
@@ -12,35 +15,61 @@
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:layout_weight="1"
         android:ems="10"
-        android:hint="username" />
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:textColor="#FF0000"
+        android:textColorHint="#000000" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_below="@+id/etUsername"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:layout_weight="1"
         android:ems="10"
         android:hint="password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColor="#FF0000"
+        android:textColorHint="#000000" />
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_width="153dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:layout_weight="1"
+        android:background="#000000"
+        android:shadowColor="#F60C0C"
         android:text="Login"
-        app:iconTint="#FFFFFF" />
+        android:textAlignment="center"
+        android:textColor="#FDFDFD"
+        android:textColorHint="#C80000"
+        app:icon="@color/design_default_color_on_secondary"
+        app:rippleColor="#FFFFFF"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="397dp"
+        android:layout_height="420dp"
+        android:layout_below="@+id/etUsername"
+        android:layout_marginTop="193dp"
         android:layout_weight="1"
         app:srcCompat="@drawable/byndlibrary"
         tools:srcCompat="@drawable/byndlibrary" />
-</LinearLayout>
+
+</RelativeLayout>
